@@ -1,0 +1,6 @@
+.main-info {
+    background-color: #191928;
+    color: var(--white);
+    height: 100vh; 
+    display: flex;
+}
