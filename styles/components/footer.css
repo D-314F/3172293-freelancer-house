@@ -1,0 +1,15 @@
+.footer {
+    background-color: var(--gray-600);
+    padding: 50px 10px;
+    text-align: center;
+    color: white;
+    margin: 0;
+
+    border-top: 4px solid var(--tertiary-950);
+}
+
+.footer__text {
+    margin: 0;
+    color: var(--gray-100);
+    font-size: var(--fs-xxxs);
+}

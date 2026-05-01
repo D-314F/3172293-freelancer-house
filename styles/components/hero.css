@@ -1,23 +1,24 @@
 .hero-container {
-    background-image: url(/assets/images/img-hero.jpg);
+    background-image: url(/assets/images/1-img-hero.jpg);
    background-position: center;
     background-size: cover;
+    width: 100%;
     min-height: 100vh;
     position: relative;
 }
 
   .hero {
     align-items: center;
-    justify-content: center;
     position: absolute;
-    background-color: rgba(0 0 0 / 60%); 
+    background-color: rgba(0, 0, 0, 0.6);
     width: 100%;
     height: 100vh;
-    
-    
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 4px solid var(--tertiary-950);
+
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding-top: 300px;
 
 }
 
@@ -51,7 +52,7 @@
 }
 
 .hero__science{
-    font-size: 6rem;
+    font-size: var(--fs-xxxl);
     font-weight: 900;
     color: var(--tertiary-500);
     margin: 0;
@@ -90,6 +91,7 @@
     background-color: var(--tertiary-500);
     padding: 10px;
     text-transform: uppercase;
+    text-decoration: none;
     
     
     /* Acomodar el boton  */
@@ -99,9 +101,6 @@
     gap: 10px;
 }
 
-.hero__button:hover{
-    cursor: pointer;
-}
 
 @media (width > 768px) {
     
@@ -109,8 +108,16 @@
         width: auto;
     }
     .hero{
-        padding: 0 300px;
-        gap: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+
+        padding: 0 10%;
+        gap: 80px;
+    }
+    .hero__content {
+        padding-left: 200px;
     }
 }   
 
