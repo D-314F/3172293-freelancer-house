@@ -1,4 +1,4 @@
-// Logica para cargar el componente hero
+// Logica para cargar el componente footer
 
 document.addEventListener("DOMContentLoaded", function(){
 
